@@ -1,4 +1,4 @@
-Antigrafon - version 1.0
+﻿Antigrafon - version 1.1
 Copyright (C) 2015, Petros Kyladitis
 
 
@@ -37,6 +37,10 @@ ticking the check box above.
 - You can also view the last results report of the current session (if exist), by
 selecting the 'Show Last Report' from the 'File' menu, at the main window.
 
+Change log
+==========
+#### v1.1
+- Profiles list added
 
 License
 =======

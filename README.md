@@ -1,5 +1,5 @@
 # Antigrafon
-Copyright (C) 2015, Petros Kyladitis
+Copyright (C) 2015-2016, Petros Kyladitis
 
 ## Description
 A simple but efficient backup utility, to mirroring all subfolders and files of an origin folder to a destination folder.
@@ -22,7 +22,12 @@ This program is designed for MS Windows with .NET Framework 3.5 installed.
 - You can save the results by selecting the _'Save'_ menu option.
 - You can also view the last results report of the current session (if exist), by selecting the _'Show Last Report'_ from the _'File'_ menu, at the main window.
 
+##Change log
+#### v1.1
+- Profiles list support added.
+
 ## License
 This program is free software distributed under the GNU GPL 3,
 for license details see at _'license.txt'_ file, distributed with
 this program, or see at <http://www.gnu.org/licenses/>.
+

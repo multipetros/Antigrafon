@@ -32,6 +32,7 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Multipetros.Config">
       <HintPath>lib\Multipetros.Config.dll</HintPath>
     </Reference>

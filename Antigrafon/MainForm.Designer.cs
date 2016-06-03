@@ -57,6 +57,11 @@ namespace Antigrafon{
 			this.buttonCancel = new System.Windows.Forms.Button();
 			this.progressBarWait = new System.Windows.Forms.ProgressBar();
 			this.labelWait = new System.Windows.Forms.Label();
+			this.comboBoxProfiles = new System.Windows.Forms.ComboBox();
+			this.buttonAdd = new System.Windows.Forms.Button();
+			this.buttonDel = new System.Windows.Forms.Button();
+			this.buttonEdit = new System.Windows.Forms.Button();
+			this.labelProfile = new System.Windows.Forms.Label();
 			this.menuStripTop.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -255,6 +260,54 @@ namespace Antigrafon{
 			this.labelWait.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.labelWait.Visible = false;
 			// 
+			// comboBoxProfiles
+			// 
+			this.comboBoxProfiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBoxProfiles.FormattingEnabled = true;
+			this.comboBoxProfiles.Location = new System.Drawing.Point(66, 136);
+			this.comboBoxProfiles.Name = "comboBoxProfiles";
+			this.comboBoxProfiles.Size = new System.Drawing.Size(167, 21);
+			this.comboBoxProfiles.TabIndex = 12;
+			this.comboBoxProfiles.SelectedIndexChanged += new System.EventHandler(this.ComboBoxProfilesSelectedIndexChanged);
+			// 
+			// buttonAdd
+			// 
+			this.buttonAdd.Image = ((System.Drawing.Image)(resources.GetObject("buttonAdd.Image")));
+			this.buttonAdd.Location = new System.Drawing.Point(239, 130);
+			this.buttonAdd.Name = "buttonAdd";
+			this.buttonAdd.Size = new System.Drawing.Size(32, 32);
+			this.buttonAdd.TabIndex = 13;
+			this.buttonAdd.UseVisualStyleBackColor = true;
+			this.buttonAdd.Click += new System.EventHandler(this.ButtonAddClick);
+			// 
+			// buttonDel
+			// 
+			this.buttonDel.Image = ((System.Drawing.Image)(resources.GetObject("buttonDel.Image")));
+			this.buttonDel.Location = new System.Drawing.Point(277, 130);
+			this.buttonDel.Name = "buttonDel";
+			this.buttonDel.Size = new System.Drawing.Size(32, 32);
+			this.buttonDel.TabIndex = 14;
+			this.buttonDel.UseVisualStyleBackColor = true;
+			this.buttonDel.Click += new System.EventHandler(this.ButtonDelClick);
+			// 
+			// buttonEdit
+			// 
+			this.buttonEdit.Image = ((System.Drawing.Image)(resources.GetObject("buttonEdit.Image")));
+			this.buttonEdit.Location = new System.Drawing.Point(315, 130);
+			this.buttonEdit.Name = "buttonEdit";
+			this.buttonEdit.Size = new System.Drawing.Size(32, 32);
+			this.buttonEdit.TabIndex = 15;
+			this.buttonEdit.UseVisualStyleBackColor = true;
+			this.buttonEdit.Click += new System.EventHandler(this.ButtonEditClick);
+			// 
+			// labelProfile
+			// 
+			this.labelProfile.Location = new System.Drawing.Point(12, 136);
+			this.labelProfile.Name = "labelProfile";
+			this.labelProfile.Size = new System.Drawing.Size(48, 21);
+			this.labelProfile.TabIndex = 16;
+			this.labelProfile.Text = "Profile";
+			// 
 			// MainForm
 			// 
 			this.AcceptButton = this.buttonStart;
@@ -262,6 +315,11 @@ namespace Antigrafon{
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.buttonCancel;
 			this.ClientSize = new System.Drawing.Size(521, 177);
+			this.Controls.Add(this.labelProfile);
+			this.Controls.Add(this.buttonEdit);
+			this.Controls.Add(this.buttonDel);
+			this.Controls.Add(this.buttonAdd);
+			this.Controls.Add(this.comboBoxProfiles);
 			this.Controls.Add(this.labelWait);
 			this.Controls.Add(this.progressBarWait);
 			this.Controls.Add(this.buttonCancel);
@@ -287,6 +345,11 @@ namespace Antigrafon{
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label labelProfile;
+		private System.Windows.Forms.Button buttonEdit;
+		private System.Windows.Forms.Button buttonDel;
+		private System.Windows.Forms.Button buttonAdd;
+		private System.Windows.Forms.ComboBox comboBoxProfiles;
 		private System.Windows.Forms.ToolStripMenuItem showLastReportToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem greekToolStripMenuItem;
